@@ -1,3 +1,11 @@
+
+body{
+    font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+    overflow-x: hidden;  
+}
+
 header {
     display: flex;
     align-items: center;
@@ -11,269 +19,290 @@ header {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     z-index: 500;
 
-
 }
 
 .logo {
-    margin-left: 50px;
+    margin-left: 80px;
 }
 .logo img{
     display: flex;
     height: 50px;
 }
-
 .menu {
     display: flex;
+    margin-right: 80px;
 }
-
 .menu li {
-    margin: 0 47px;
+    margin: 0 37px;
     list-style: none;
 }
 .menu li a  {
-    font-size: 14px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
     position: relative;
 }
-/* .search-button {
-    padding: 10px 15px;
-    font-size: 16px;
-    color: white;
-    
-} */
-
-/* .menu li a::before {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    content: "";
-    width: 0;
-    height: 2px;
-    border-radius: 6px;
-    background-color: #27ae60;
-    transition: 0.5s; 
-} /
-
-/ .menu li a::after {
-    position: absolute;
-    bottom: -5px;
-    right: 0;
-    content: "";
-    width: 0;
-    height: 2px;
-    border-radius: 6px;
-    background-color: #27ae60;
-    transition: 0.5s; 
-} */
-.menu li a:hover::after {
-    width: 100%;
-}
-.menu li a:hover {
-    color: #000;
+select{
+    border: none;
+    background-color: white;
 }
 
-.contact {
+.menu .contact {
     background-color: #cc0000;
     color: #ffffff;
     padding: 5px;
     border-radius: 15PX;
-    width: 80px;
+    width: 85px;
     border: none;
+    height: 35px;
 
 }
 
 #history {
-         margin-top: -10px; 
-        align-items: center;
-        width: 100%;
-        height: 700px;
-        background-color: #e0e0e0; 
-        justify-content: space-between;
-}
-#history h1{
-    text-align: center;
-    margin-top: 100px;
-    color: #cc0000;
-    font-size: 40px;
-    font-weight: bold;
-}
-.fabrique-lorem{
-    margin-top: 5px;
-    display: flex; 
-    align-items: center;
-    /* margin-left: 10%; */
-    margin-right: 10%;
-    justify-content: space-between;
-}
-.history-righ{
     display: flex;
+        width: 100%;
+        height: 1000px;
+        background-color: white; 
+    
 }
-.red-page{
-    font-size: 20px;
-    background-color: red;
-    padding: 50px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    width: 20%;
-    height: 35%; 
-    margin-left: -50x;
-    transform: rotate(5deg);
-    margin-top: 20px;
-    /* margin-left: 15px; */
-    position: absolute;
+.history-us{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+   margin-top: 50px;
+}
+ .big-titre{
+    display: flex;
+    background-color:white;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+    color: #cc0000;
+    font-size: 30px;
+    font-weight: bold;
+    width: 90%;
+    margin: auto;
+    
 
+ }
+  .lorem-fabrique{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 70px;
+ }
+ 
+ .history-gauche, .history-droite{
+    display: flex;
+    width: 50%;
+
+    
+ }
+
+  .history-gauche {
+    display: flex;
+    height: 20%;
+    background-color: #cc0000;
+    color: white;
+    flex-direction: column;
+    padding: 0 0 70px 50px;
+    box-shadow: 0 15px #ed6666,  0 25px rgb(248, 182, 182);
+    border-bottom-right-radius: 100PX;
+    margin-top: 50px;
+    
+ }
+ .history-gauche p{
+    display: flex;
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+    
+ }
+ 
+ .history-gauche span{
+    display: flex;
+    color: white;
+    font-size: 55px;
+    padding-left: 450px;
+    margin-top: -40px;
+ }
+ 
+ .history-droite{
+    display: flex;
+    position: relative;
+    height: 600px;
+    
+ }
+
+.red-page{
+    
+    background-color: #cc0000;
+    width: 95%; 
+    border-radius: 10px;
+    transform: rotate(5deg);
+    position: absolute;
+    height: 95%;
 }
-.lorem {
+
+.fabrique-lorem {
     font-size: 20px;
     background-color: #ffffff;
-    padding: 50px;
-    position: relative;
+    margin-left: 28px;
+    margin-top: 25px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     border-radius: 10px;
-    /* width: 30%; */
-    transform: rotate(-2deg);
-    margin-top: 40px;
-    margin-left: 15px;
-
+    transform: rotate(-1deg);
+    width: 95%; 
+    height: 96%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    
 }
-
-.fabrique {
-    background-color: #cc0000;
-    width: 550px;
-    height: 150px;
-    margin-top: 25px;
-    padding: 0%;
-    margin-left: 100px;
-    color: #ffffff;
-    box-shadow: 0 15px #f13e3e,  0 25px rgb(181, 100, 100);
-    border-bottom-right-radius: 100PX;
-}
-.fabrique h3{
-    font-size: 35PX;
-
-}
-.fabrique h1{
-    margin-top: 15px;
-    font-size: 15px;
-    color: white;
-}
-.pied-history{
+.quote-a{
+    margin-left: 20px;
     position: absolute;
-    margin-top: 50px;
-    /* background-color: #cc0000; */
-    flex-direction:column ;
-    width: 40px;
-    height: 15px;
+    font-size: 60px;
+}
+.quote-b{
+    margin-left: 320px;
+    font-size: 60px;
+}
+ .text p{
+    margin-top: 55px;
+    line-height: 2;
+  text-align: center;
+  width: 460px;
+  padding-left: 50px;
+    
+}
+
+.pied-section{
+    display: flex;
     justify-content: center;
-   
-} 
-.pied-history .a{
-    position: absolute;
-    margin-top: 50px;
+    text-align: center; 
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    gap: 15px;
+
+ }
+.a{
     background-color: #cc0000;
-    flex-direction:column ;
     width: 10px;
     height: 10px;
     border-radius: 15px;
-    margin-left: 650px;
 }
-.pied-history .b{
-    position: absolute;
-    margin-top: 50px;
+.b{
     background-color: #cc0000;
-    flex-direction:column ;
     width: 10px;
     height: 10px;
     border-radius: 15px;
-    margin-left: 700px;
 } 
-.pied-history .c{
-    position: absolute;
-    margin-top: 50px;
+.c{
     background-color: #cc0000;
-    flex-direction:column ;
     width: 50px;
     height: 15px;
     border-radius: 25px;
-    margin-left: 750px;
 } 
 /* section pedagogie */
-#pedagogie{
+#pedagogie {
+    display: flex;
     width: 100%;
     height: 600px;
-    margin-top: -30px;
-    background-color:white ;
-    display: flex;
-
+    
 }
-#pedagogie .titre-pedagogie h1{
-    display: flex; 
-    color: red;
-    margin-top: 10px;
-    width: 390px;
-    font-weight: bold;
-    font-size: 50px;
-    padding-left: 600px;
-    position: relative;
-}
-#pedagogie .pedagogie-left{
-   display: flex;
-   margin-top: 150px;
-   position: absolute;
-   margin-left: 100px;
-}
-#pedagogie .pedagogie-right{
+.notre-pedagogie{
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    margin-left: -250px;
-    width: 550px;
+    width: 100%;
+    
+}
+.big-titre{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+    color: #cc0000;
+    font-size: 30px;
+    font-weight: bold;
+    width: 90%;
+    margin: auto;
+
+ }
+ .content-pedagogie{
+    display: flex;
+    width: 90%;
+    margin: auto;
+ }
+ 
+.pedagogie-left .pedagogie-right{
+    width: 50%;
 
 }
+.pedagogie-left{
+    display: flex;
+ 
+ }
+ .pedagogie-right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+ }
 .pedagogie-right h3{
-    color: red;
-    font-size: 35px;
+    color: #cc0000;
+    font-size: 30px;
 }
 .pedagogie-right p{
     color:black;
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 2;
 
 }
 .pedagogie-bottom{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; 
+
+}
+.pedagogie-bottom .a{
+    display: flex;
     height: 10px;
     width: 90px;
     border-radius: 10px;
     background-color: #cc0000;
-    position: absolute;
-    margin-top: 500px;
-    margin-left: 650px;
+   
 }
+/* section plier */
 #pilier{
     width: 100%;
-    height: 900px;
-    background-color: white;
-    margin-top: -20px;
+    height: 950px;
     display: flex;
+ 
 }
-#pilier .left{
-    background-color: white;
+.content-pilier{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 850px;
+}
+#pilier .left, .right{
     width: 50%;
 }
 #pilier .left h3{
     display: flex;
-    justify-content: center;
     font-size: 35px;
     color: #cc0000;
     font-weight: bold;
 }
 #pilier .left .grid{
     display: grid;
-    padding: 100px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 40px;   
-    margin-top: -70px;
 }
 #pilier .items{
     padding: 10px;
@@ -282,7 +311,7 @@ header {
     border-radius: 5px;
     justify-content: space-between;
     width: 250px;
-    height: 180px;
+    height: 195px;
     border-bottom: 10px solid #cc0000 ;
     
 }
@@ -299,52 +328,96 @@ header {
     font-size: 15px;
 }
 #pilier .right{
-    padding: 100px;
+    padding-left:100px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.right .photo{
+    display: flex;
+    position: relative;
 }
 #pilier .right .apprenants img{
     border-radius: 35px;
     width: 500px;
-    height: 750px;
-
+    height: 820px;   
+    margin-top: 20px;
+    z-index: 200;
+  position: relative;
+  margin-left: 50px;
 }
 #pilier .right .fond{
     border-radius: 35px;
     width: 500px;
-    height: 750px;
+    height: 800px;
     background-color: #cc0000;
-    margin-left: 20px;
-    margin-top: -770px;
+    position: absolute; 
+    margin-left: 90px;
+   
 }
+.pied-pilier .pied-section{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: -350px;
+    margin-top: -50px;
+    z-index: 500;
+}  
+.pied-pilier .a{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+   
+}
+.pied-pilier .b{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+} 
+.pied-pilier .c{
+    background-color: white;
+    width: 50px;
+    height: 15px;
+    border-radius: 25px;
+} 
+
+
 /* section valeur */
 
 #nos-valeur{
     width: 100%;
     height: 800px;
-    background-color: white;
     display: flex;
 
 }
-#nos-valeur .titre-valeur h1{
-    display: flex; 
-    color: red;
-    margin-top: 10px;
-    width: 390px;
-    font-weight: bold;
-    font-size: 50px;
-    padding-left: 600px;
-    position: relative;
+.content-valeur{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.valeur{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 50px;
+}
+.valeur-left, .valeur-right{
+    display: flex;
+    width: 50%;
+    
 }
 #nos-valeur .valeur-left{
     display: flex;
     flex-direction: column;
-    margin-top: 90px;
-    margin-left: -900px;
-    width: 550px;
-    background-color:white;
+  
 }
+
 #nos-valeur .valeur-left h3{
-    color: red;
+    color: #cc0000;
     font-size: 35px;
 }
 .valeur-left p{
@@ -352,49 +425,58 @@ header {
     font-size: 20px;
     line-height: 2;
 }
+.plus {
+    display: flex;
+    text-align: center;
+}
+
 #nos-valeur .valeur-left .plus button{
-    background-color: red;
-    width: 230px;
+    background-color: #cc0000;
+    width: 250px;
     height: 70px;
     border-radius: 35px;
     border: none;
     color: #ffffff;
     font-weight: bold;
 }
-#nos-valeur .arrow i{
-    display: flex;
-    width: 100px;
-    height: 200px;
-    margin-top: 50px;
-   text-align: center;
-   
-}
-#nos-valeur .valeur-left .plus p{
-    
+
+
+
+.plus p{
+    margin-top: 10px;
     color: #ffffff;
     font-weight: bold;
 }
+
+ .respect{
+    display: flex;
+} 
+.arrow img{
+    display: flex;
+    margin-top: 210px;
+    
+
+   
+}
  .valeur-right .grid{
     display: grid;
-    padding: 100px;
+    padding: 15px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 40px;   
-    margin-top: -5px;
+   
 }
+
 .valeur-right .ligne{
     padding: 10px;
     background-color: white;
     border-radius: 5px;
     box-shadow: 5px 5px 5px 5px #e0e0e0;
     justify-content: space-between;
-    width: 500px;
-    height: 100px;
     display: flex;
-
-    
+    width: 100%;
+    height: 100px;
 }
-
 .valeur-right .ligne button{
     color:#cc0000 ;
     font-size: 25px;
@@ -414,34 +496,28 @@ header {
     font-size: 25px;
     margin-right: 280px;
     position: relative;
+
 }
 .valeur-right .ligne span{
     color:black;
     font-size: 15px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: -1px;
     position: absolute;
 }
+
 #Formation{
     width: 100%;
     height: 400px;
-    margin-top: 0px;
-    background-color:white;
     display: flex;
-    position: relative;
 
 }
-#Formation .titre-chiffre h1{
-    display: flex; 
-    color: red;
-    margin-top: 50px;
+.content-formation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
     justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 50px;
-    padding-left: 600px; 
-
 }
 #Formation .chiffre {
     display: grid;
@@ -449,78 +525,66 @@ header {
     grid-template-rows: repeat(1, 1fr);
     background-color: #cc0000;
     width: 100%;
+    margin: auto;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 100px;
     
-    height: 250px;
-    margin-top: 150px;
-    position: absolute;
-    flex-direction: column;
 } 
+
 .chiffre .cas{
-    width: 190px;
-    height: 20px;
     gap: 10px;
-    margin-left: 15px;
-    padding: 65px;
+    width: 250px;
 }
 .chiffre .cas h1{
     color: #ffffff;
     font-size: 40px;
 }
 .chiffre .cas p{
-    margin-top: -35px;
     color: white;
     font-size: 20px;
 }
 
-#Formation .equipe h1{
-
-    color: red;
-    margin-top: 50px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 50px;
-    padding-left: -150px;
-    margin-top: 400px; 
-    position: absolute ;
-
-}
 /* section equipe */
 #notre-equipe{
     width: 100%;
-    height: 800px;
-    margin-top: 0px;
-    background-color: white;
+    height: 850px;
     display: flex;
   
 
 }
-#notre-equipe .staff h1{
-    display: flex; 
-    color: red;
-    margin-top: 50px;
+.content-equipe {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: bold;
+  
+    
+}
+.content-equipe .big-titre{
+    display: flex;
+    flex-direction: column; 
     justify-content: center;
     text-align: center;
     align-items: center;
     font-weight: bold;
-    font-size: 50px;
-    margin-left: 50px;
+    font-size: 30px;
+    
+    
 }
-#notre-equipe .staff h6{
+.content-equipe  h6{
     display: flex; 
     color:black;
-    margin-top: 90px;
     justify-content: center;
     text-align: center;
     align-items: center;
     height: 2px;
     width: 600px;
-    font-weight: bold;
     font-size: 20px;
-    /* padding-left: 450px;  */
-    margin-left: 450px;
+  
 }
 
 
@@ -529,12 +593,11 @@ header {
     justify-content: space-around;
     width:1450PX;
 
-    /* margin-left: 200px; */
 }
-#notre-equipe .grid .cellule{
-   
+.cellule{
     width: 300px;
     height: 450px;
+    padding-left: 15px;
     gap: 15px;
     justify-content: space-around;
     border-radius: 10px;
@@ -542,23 +605,22 @@ header {
     box-shadow: 5px 10px 10px 10px #e0e0e0 ;
 
 }
-#notre-equipe .grid .cellule h3{
+.cellule h3{
     font-size: 30px;
-    margin-left: 35px;
+    margin-left: 5px;
 }
 #notre-equipe .grid .cellule span{
     font-size: 20px;
     color: #cc0000;
-    margin-top: -20px;
-    margin-left: 35px;
+ 
 }
 #notre-equipe .grid .cellule p{
     font-size: 15px;
     color: grey;
-    margin-left: 35px;
+    
 }
 #notre-equipe .grid .cellule img{
-    margin-left: 35px;
+    margin-left: 5px;
     margin-top: 15px;
     
 }
@@ -571,87 +633,49 @@ header {
     height: 30px;
     width: 30px;
 }
-.pied-equipe{
-    position: absolute;
-    margin-top: 700px;
-    /* background-color: #cc0000; */
-    flex-direction:column ;
-    width: 40px;
-    height: 15px;
-    justify-content: center;
-   
-} 
-.pied-equipe .a{
-    position: absolute;
-    margin-top: 50px;
-    background-color: #cc0000;
-    flex-direction:column ;
-    width: 10px;
-    height: 10px;
-    border-radius: 15px;
-    margin-left: 650px;
+.content-equipe .pied-section{
+    margin-top: 70px;
 }
-.pied-equipe .b{
-    position: absolute;
-    margin-top: 50px;
-    background-color: #cc0000;
-    flex-direction:column ;
-    width: 10px;
-    height: 10px;
-    border-radius: 15px;
-    margin-left: 700px;
-} 
-.pied-equipe .c{
-    position: absolute;
-    margin-top: 50px;
-    background-color: #cc0000;
-    flex-direction:column ;
-    width: 50px;
-    height: 15px;
-    border-radius: 25px;
-    margin-left: 750px;
-} 
+
 /* section recructement */
 #recrutement{
     width: 100%;
     height: 500px;
-    /* margin-top: -30px; */
-    background-color:white;
+    margin: auto;
     display: flex;
 
 }
-#recrutement .titre-recrutement h1{
+.content-recrutement{
     display: flex; 
-    color: red;
-    margin-top: 10px;
-    width: 390px;
-    font-weight: bold;
-    font-size: 50px;
-    padding-left: 600px;
+    flex-direction: column;
+    width: 100%;
     
 }
-#recrutement .recrutement-left{
+.communique{
    display: flex;
-   margin-top: 140px;
-   position: absolute;
-   margin-left: 10px;
+   width: 90%;
+   margin: auto;
+   
 }
-#recrutement .recrutement-left img{
+.recrutement-left, .recrutement-right{
+    display: flex;
+    width: 50%;
+    margin: auto;
+ }
+ .recrutement-left img {
     display: flex;
     width: 600px;
-    margin-left: 100px;
+  
  }
  
-#recrutement .recrutement-right{
+.recrutement-right{
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
-    margin-left: -220px;
-    width: 500px;
+  
 
 }
 .recrutement-right h3{
-    color: red;
+    color: #cc0000;
     font-size: 25px;
 }
 .recrutement-right p{
@@ -664,7 +688,7 @@ header {
 #offre{
     background-color: white;
     width: 100%;
-    height: 700px;
+    height: 570px;
 }
 #offre .offre-cours {
     width: 40%;
@@ -673,7 +697,7 @@ header {
     padding-top: 20px;
     background-color: #f6ebf0;
     border-radius: 20px;
-    margin-left: 100px;
+    margin-left: 70px;
 }
 
 .offre-cours h2{
@@ -691,7 +715,7 @@ header {
 .offre-cours .post {
     height: 200px;
     width: 50%;
-    /* color: #cc0000; */
+
 }
 .offre-cours .post h5{
     color: #cc0000;
@@ -701,23 +725,33 @@ header {
 .offre-cours .tiret {
     width: 30px;
     height: 5px;
-    background-color: #ce1642;
+    background-color: #cc0000;
     margin-left: 140px;
     margin-top: 30px;
 }
 
 .offre-cours .adresse {
-    height: 110px;
-    width: 120px;
+    height: 120px;
+    width: 130px;
     padding: 10px;
     background-color: #ffffff;
     border-radius: 20px;
-    line-height: 10px;
+    line-height: 1px;
     margin-top: 10px;
+    
+}
+.offre-cours .adresse div{
+    display: flex;
+}
+.offre-cours .adresse div img{
+    width: 17px;
+    height: 17px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
-.offre-cours button{
-    background-color: #ce1642;
+.Postuler button{
+    background-color: #cc0000;
     border-radius: 30px;
     padding: 8px;
     width: 100px;
@@ -736,3 +770,281 @@ header {
     margin-top: 10px;
     margin-left: 450px;
 }
+#offre .formulaire {
+    width: 40%;
+    height: 520px;
+    padding-left: 30px;
+    padding-top: 20px;
+    background-color:white;
+    margin-left: 750px;
+    margin-top: -540px;
+  
+}
+
+#offre .formulaire .contact input{
+    border-radius: 10px;
+    padding-left: 20px;
+    height: 60px;
+    width: 250px;
+    border: 1px solid rgb(201, 200, 200);
+
+}
+.forma-ref{
+    display: flex;
+}
+.form-reference{
+    display: flex;
+}
+.forma-ref img{
+    padding-left: 350px;
+    height: 50px;
+    align-items: center;
+}
+.fleche{
+    display: flex;
+    color: #000;
+}
+.fleche a{
+    display: flex;
+    color: #000;
+}
+
+.fleche img{
+    display: flex;
+    margin-top: 7px;
+}
+.form-reference img{
+    padding-left: 350px;
+    height: 50px;
+}
+#offre .formulaire .adress input{
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-top: 15px;
+    height: 60px;
+    width: 250px;
+    border: 1px solid rgb(201, 200, 200);
+}
+#offre .formulaire .message textarea{
+    border-radius: 10px;
+    flex-direction: column;
+    padding-left: 20px;
+    height: 120px;
+    width: 530px;
+    border: 1px solid rgb(201, 200, 200);
+
+}
+#offre .formulaire .valide input{
+    height: 20px;
+    width: 20px;
+    
+}
+#offre .formulaire .valide p{
+    margin-left: 30px;
+    margin-top: -20px;
+    
+}
+#offre .formulaire .bouton button{
+    height: 50px;
+    width: 150px;
+    background-color: #cc0000;
+    color: white;
+    margin-top: 20px;
+    border-radius: 25px;
+    border: none;
+    
+}
+#offre .formulaire .bouton p{
+    color:grey ;
+    margin-top: 20px;
+    
+}
+#offre .formulaire .fichier p{
+    margin-left: 400px;
+    margin-top: 20px;
+    color: #f13e3e;
+    
+}
+
+
+/* section partenaire */
+#partenaires{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+ .content-partenaires {
+    width: 100%;
+    margin: auto; 
+    
+}
+
+#partenaires .contener{
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 60px;
+}
+#partenaires .contener .items{
+    width: 250px;
+    height: 150px; 
+    display: flex;
+    justify-content: space-between;
+
+}
+.contener .items img{
+    width: 250px;
+    height: 150px; 
+    display: flex;
+    justify-content: space-between;
+
+}
+.content-partenaires .pied-section{
+    margin-top: 70px;
+}
+
+
+/* section footer */
+#footer{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color:black;
+ display: flex;
+}
+#footer .logo img{
+     display: flex;
+     margin-top: 30px;
+     color: white;
+     display: flex;
+     width: 200px;
+}
+#footer .media {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+
+}
+
+#footer .voir-plus{
+    margin-top: 30px;
+}
+#footer .voir-plus span{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+#footer .voir-plus p{
+    margin-top: 50px;
+    color: white;
+    font-size: 15px;
+    line-height: 2;
+    
+}
+#footer .coordonne{
+    margin-top: 7px;
+}
+#footer .coordonne p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+#footer .coordonne span{
+    margin-top: 50px;
+    color: white;
+    font-size: 15px;
+    line-height: 2;
+    
+}
+
+#footer .newsletter{
+    margin-top: 7px;
+}
+#footer .newsletter p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+#footer .newsletter span{
+    margin-top: 50px;
+    color: white;
+    font-size: 15px;
+    line-height: 2;
+    
+}
+
+#footer .connecte{
+    margin-top: 50px;
+    margin-right: 150px;
+}
+#footer .connecte input{
+    margin-top: -5px;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px 0px 10px 10px ;
+    border: none;
+    padding-left: 15px;
+}
+#footer .ajouter input{
+    margin-top: -37px;
+    width: 60px;
+    height: 35px;
+    margin-left: 147px;
+    border-radius: 7px 10px 10px 0px;
+    border: none;
+    color: white;
+    background-color: #cc0000;
+    position: absolute;
+    padding-left: 15px;
+}
+#footer .connecte .ajouter placeholder{
+    color: white;
+}
+
+#pied{
+    width: 100%;
+    height: 70px;
+    background-color: #cc0000;
+    display: flex;
+}
+.ref p{
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+.ref span{
+    display: flex;
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 1200px;
+    margin-top: -40px;
+}
+.ref span i{
+    display: flex;
+    color: black;
+    
+}
+button{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
